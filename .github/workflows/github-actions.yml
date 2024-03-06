@@ -4,7 +4,7 @@ name:
 on:
   # Triggers the workflow every day at 5AM
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 5 * * *"
  
 jobs:
   cron:
