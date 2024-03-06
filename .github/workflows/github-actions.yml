@@ -13,5 +13,5 @@ jobs:
     
     steps:
       - name: Run a test script
-        run: run.test
+        run: /home/tester/run.test
         working-directory: /home/tester
