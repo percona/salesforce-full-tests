@@ -1,0 +1,16 @@
+name:
+  Job
+  # Controls when the workflow will run
+on:
+  # Triggers the workflow every day at 5AM
+  schedule:
+    - cron: "*/5 * * * *"
+ 
+jobs:
+  cron:
+    runs-on: intdev
+    
+    steps:
+      - name: Run a test script
+        run: run.test
+        working-directory: /home/tester
